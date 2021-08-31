@@ -58,11 +58,11 @@ $ php artisan key:generate
 $ php artisan migrate
 ```
 
-動作を確認
-▼Laravel
-http://127.0.0.1:8080/
-▼phpMyadmin
-http://localhost:8081/index.php
+動作を確認  
+▼Laravel  
+http://127.0.0.1:8080/  
+▼phpMyadmin  
+http://localhost:8081/index.php  
 
 
 ## ３．作成者情報
