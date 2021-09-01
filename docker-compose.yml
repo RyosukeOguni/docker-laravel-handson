@@ -1,9 +1,18 @@
+# Docker Composeファイルのバージョンを指定
 version: "3.9"
+
+# コンテナを設定
 services:
+  # 以下、インデントが区切りとして意味を持つので注意！
+
+  # phpを動作させるappサービスを設定
   app:
+    # 動作させるDockerfileの置かれたビルドコンテキストを指定
     build: ./infra/php
+    #　backendのlaravelをappサービスのworkにマウント
     volumes:
       - ./backend:/work
+
   web:
     image: nginx:1.20-alpine
     ports:
